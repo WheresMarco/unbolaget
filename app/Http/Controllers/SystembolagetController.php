@@ -12,7 +12,7 @@ class SystembolagetController extends Controller
             [
                 'Ocp-Apim-Subscription-Key' => env('SYSTEMBOLAGET_API_KEY'),
             ]
-        )->get('https://api-extern.systembolaget.se/product/v1/product?type=Beer');
+        )->get('https://api-extern.systembolaget.se/product/v1/product');
 
         return $response->json();
     }
